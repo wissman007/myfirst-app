@@ -1,0 +1,16 @@
+<p>
+  This is TP 1 String interpolation & property binding
+</p>
+
+<input class="form-control" type="text"  [(ngModel)]="username">
+
+<p>{{username}}</p>
+
+<button class="btn btn-primary" [disabled]="username === ''" (click)="onRestUsername()" >Reset Username</button>
+
+<hr>
+<button class="btn btn-primary"  (click)="onShowDetails($event)">Display Details</button>
+<p *ngIf='displaySecret'>Secret Password = tuna</p>
+<div *ngFor="let event of events; let i=index" [ngStyle]="{backgroundColor: i >= 5 ? 'blue':'white'}" [ngClass]="{sup5 : event >= 5 }" >
+{{event}}
+</div>
