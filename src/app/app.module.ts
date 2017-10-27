@@ -15,6 +15,8 @@ import { EvenComponent } from './tp-events/game-control/even/even.component';
 import {BasicHightLightDirective} from "./tp-events/game-control/basic-highlight/basic-highlight.directive";
 import { BetterHightLightDirective } from './better-hight-light.directive';
 import { UnlessDirective } from './unless.directive';
+import {ServerService} from "./servers.service";
+import {LoggingService} from "./logging.service";
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import { UnlessDirective } from './unless.directive';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServerService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
