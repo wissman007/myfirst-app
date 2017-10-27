@@ -6,13 +6,25 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import {ServeurComponent} from "./serveur/serveur.component";
 import { UserComponent } from './user/user.component';
+import { ServerBindingComponent } from './tp-binding/server-binding/server-binding.component';
+import { CockpitComponent } from './tp-binding/server-binding/cockpit/cockpit.component';
+import { ServerElementComponent } from './tp-binding/server-binding/server-element/server-element.component';
+import { GameControlComponent } from './tp-events/game-control/game-control.component';
+import { OddComponent } from './tp-events/game-control/odd/odd.component';
+import { EvenComponent } from './tp-events/game-control/even/even.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServeurComponent,
-    UserComponent
+    UserComponent,
+    ServerBindingComponent,
+    CockpitComponent,
+    ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,

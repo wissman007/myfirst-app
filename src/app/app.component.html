@@ -8,5 +8,25 @@
      <app-server></app-server>
   </div>
 </div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-server-binding></app-server-binding>
+  </div>
+</div>
+<hr>
+<app-game-control (eventFired)="onIntervalFired($event)"></app-game-control>
+
+  <div class="row">
+    <div class="col-xs-7">
+      <app-even></app-even>
+    </div>
+    <div class="col-xs-5">
+      <app-odd *ngFor="let odd of odds" [oddNumber]="odd"></app-odd>
+    </div>
+
+  </div>
+
+
 
 </div>
