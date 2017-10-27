@@ -12,6 +12,9 @@ import { ServerElementComponent } from './tp-binding/server-binding/server-eleme
 import { GameControlComponent } from './tp-events/game-control/game-control.component';
 import { OddComponent } from './tp-events/game-control/odd/odd.component';
 import { EvenComponent } from './tp-events/game-control/even/even.component';
+import {BasicHightLightDirective} from "./tp-events/game-control/basic-highlight/basic-highlight.directive";
+import { BetterHightLightDirective } from './better-hight-light.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { EvenComponent } from './tp-events/game-control/even/even.component';
     ServerElementComponent,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    BasicHightLightDirective,
+    BetterHightLightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
